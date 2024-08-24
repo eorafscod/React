@@ -1,19 +1,17 @@
-"use client";
-
-import Pagina from "../components/Pagina";
+import Pagina from "../components/page";
 
 export default function Array() {
-  const carros = ["corsa", "Celta", "Ferrari", "Fusca", "Cobalt"];
+  const carros = ["Corsa", "Celta", "Ferrari", "Fusca", "Cobalt"];
 
   return (
-    <Pagina titulo="Página de array">
+    <Pagina titulo="Página de Array">
       {carros.map((item) => (
         <p>{item}</p>
       ))}
 
       <ul>
         {carros.map((item) => (
-          <p>{item}</p>
+          <li>{item}</li>
         ))}
       </ul>
     </Pagina>
