@@ -5,7 +5,7 @@ import carData from "./data/carData";
 
 export default function Home() {
   return (
-    <Pagina titulo="Exposição de Carros">
+    <Pagina titulo="Carros">
       <main>
         <Container className="d-flex flex-wrap justify-content-around">
           {carData.map((car, index) => (

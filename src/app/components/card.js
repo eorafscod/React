@@ -1,14 +1,18 @@
 "use client";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 function CustomCard({ title, text, imageSrc, buttonText }) {
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={imageSrc} />
+    <Card style={{ width: '18rem' }}>
+      <Card.Img 
+        variant="top" 
+        src={imageSrc} 
+        style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
+      />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
+        <Card.Text dangerouslySetInnerHTML={{ __html: text }} />
         <Button variant="primary">{buttonText}</Button>
       </Card.Body>
     </Card>

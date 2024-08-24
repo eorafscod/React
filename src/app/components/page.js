@@ -1,18 +1,17 @@
 "use client";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import Cabecalho from './cabecalho'
 
 export default function Pagina(props) {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#">Sistema Acadêmico</Navbar.Brand>
+          <Navbar.Brand href="#">Exposição de Carros</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Página 1</Nav.Link>
-            <Nav.Link href="#features">Página 2</Nav.Link>
-            <Nav.Link href="/array">Array</Nav.Link>
-            <Nav.Link href="/card">Card</Nav.Link>
+            <Nav.Link href="#">Página 1</Nav.Link>
+            <Nav.Link href="#">Página 2</Nav.Link>
+            <Nav.Link href="#">Array</Nav.Link>
+            <Nav.Link href="#">Card</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
